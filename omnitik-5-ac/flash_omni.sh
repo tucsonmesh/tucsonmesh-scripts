@@ -70,7 +70,7 @@ if ! ping -c 1 192.168.88.1 -W 2; then
   exit 1
 fi
 
-echo "  Looks like we're the Omnitik is reachable. Proceeding with configuration"
+echo "  Looks like the Omnitik is reachable. Proceeding with configuration"
 echo ""
 
 echo "  Copying firmware file to the Omnitik"
@@ -90,7 +90,7 @@ fi
 
 ssh_cmd="/system reset-configuration no-defaults=yes run-after-reset=/flash/${config_name}"
 
-echo "  Before we actually reset the Omnitik, please check that the SSH command we'll execute looks correct"
+echo "  Now, before we actually reset the Omnitik, please check that the SSH command we'll execute looks correct"
 echo ""
 echo "${ssh_cmd}"
 echo ""
