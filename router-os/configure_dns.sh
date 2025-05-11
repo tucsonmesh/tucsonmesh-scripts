@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# This script was used when updates were needed for all DNS servers on all active omnis
+# 
+# It configures both the upstream DNS settings (/ip dns) and the DNS servers handed out
+# over DHCP via /ip dhcp-server
+
 for nn in 53 54 55 56 57 58 61 62 63 64 65 67 68 71 72 73 75 76 77 79 80 81 82 83 84; do
   server=10.69.0.${nn}
 
